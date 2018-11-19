@@ -1,0 +1,18 @@
+3x2 grid
+
+123
+234
+
+12345
+23456
+34567
+45678
+
+s = 0; s < width + height - 1; s++
+
+x = min(s, width - 1)
+y = max(s - width + 1, 0)
+
+for (int i = 0; i < min(s, width + height - 1 - s); i++)
+x--
+y++
